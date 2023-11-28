@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B5A58D3-4296-4E45-B720-2F867E92066F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>biblioteca</RootNamespace>
+    <AssemblyName>biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes\ClientesAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ClientesAlterar.Designer.cs">
+      <DependentUpon>ClientesAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ClientesCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ClientesCadastrar.Designer.cs">
+      <DependentUpon>ClientesCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ClientesExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ClientesExcluir.Designer.cs">
+      <DependentUpon>ClientesExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ClientesVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ClientesVisualizar.Designer.cs">
+      <DependentUpon>ClientesVisualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livros\LivrosAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livros\LivrosAlterar.Designer.cs">
+      <DependentUpon>LivrosAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livros\LivrosCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livros\LivrosCadastro.Designer.cs">
+      <DependentUpon>LivrosCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livros\LivrosExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livros\LivrosExcluir.Designer.cs">
+      <DependentUpon>LivrosExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livros\LivrosVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livros\LivrosVisualizar.Designer.cs">
+      <DependentUpon>LivrosVisualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locação\LocacaoAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locação\LocacaoAlterar.Designer.cs">
+      <DependentUpon>LocacaoAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locação\LocacaoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locação\LocacaoCadastrar.Designer.cs">
+      <DependentUpon>LocacaoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locação\LocacaoExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locação\LocacaoExcluir.Designer.cs">
+      <DependentUpon>LocacaoExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locação\LocacaoVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locação\LocacaoVisualizar.Designer.cs">
+      <DependentUpon>LocacaoVisualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clientes\ClientesAlterar.resx">
+      <DependentUpon>ClientesAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ClientesCadastrar.resx">
+      <DependentUpon>ClientesCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ClientesExcluir.resx">
+      <DependentUpon>ClientesExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ClientesVisualizar.resx">
+      <DependentUpon>ClientesVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livros\LivrosAlterar.resx">
+      <DependentUpon>LivrosAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livros\LivrosCadastro.resx">
+      <DependentUpon>LivrosCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livros\LivrosExcluir.resx">
+      <DependentUpon>LivrosExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livros\LivrosVisualizar.resx">
+      <DependentUpon>LivrosVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locação\LocacaoAlterar.resx">
+      <DependentUpon>LocacaoAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locação\LocacaoCadastrar.resx">
+      <DependentUpon>LocacaoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locação\LocacaoExcluir.resx">
+      <DependentUpon>LocacaoExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locação\LocacaoVisualizar.resx">
+      <DependentUpon>LocacaoVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
